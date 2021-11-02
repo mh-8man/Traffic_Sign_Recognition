@@ -8,8 +8,11 @@ __pycache__/
 
 
 # data foler
-data/
-processed_data/
+data/*
+processed_data/*
+
+!data/.gitkeep
+!processed_data/.gitkeep
 
 # Distribution / packaging
 .Python
