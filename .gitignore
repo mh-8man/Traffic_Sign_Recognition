@@ -9,6 +9,8 @@ __pycache__/
 # data folders
 data/*
 processed_data/*
+!processed_data/labels_nor_test.npy
+!processed_data/data_nor_test.npy
 !data/norwegian_signs/
 !data/norwegian_signs.csv
 !data/.gitkeep
