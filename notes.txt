@@ -1,0 +1,10 @@
+Tested models on norwegian traffic signs (20 epochs)
+CNN_Traffic_Sign accuracy : 0.2391304347826087
+Test_Model accuracy : 0.17391304347826086
+
+We think that the models are overfitted towards the zoomed in pictures in the training and test set. 
+This will result in a model that has a poor judgement of signs when there is a lot of noise in the pictures.
+The pictures we tried in the last run had a lot of noise in them compared to the rest of the images of german traffic signs.
+
+
+Er youtube relevant resource i rapporten (CNN Tutorial)
