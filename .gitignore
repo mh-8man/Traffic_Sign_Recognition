@@ -13,8 +13,11 @@ processed_data/*
 !processed_data/data_nor_test.npy
 !data/norwegian_signs/
 !data/norwegian_signs.csv
+!data/norwegian_meta/
+!data/norwegian_meta.csv
 !data/.gitkeep
 !processed_data/.gitkeep
+
 
 # Distribution / packaging
 .Python
