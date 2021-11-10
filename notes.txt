@@ -7,4 +7,17 @@ This will result in a model that has a poor judgement of signs when there is a l
 The pictures we tried in the last run had a lot of noise in them compared to the rest of the images of german traffic signs.
 
 
-Er youtube relevant resource i rapporten (CNN Tutorial)
+Er youtube relevant resource i rapporten (CNN Tutorial)?
+
+
+Tried to take clean images of norwegian traffic signts, with no background noise to see if it would give good results on the model.
+The results from this was as follows:
+Test_Model.h5:  0.611111111111111
+CNN_Traccic_Sign.h5:  0.5555555555555556 
+
+Now we will make a new model, with 3 epochs to see if it gives a more accurate result
+The accuracy on norwegian pictures was: 0.10869565217391304
+while testing on the clean images got only: 0.5833333333333334
+This was the result from the model when it had 0.925 accuracy during its last epoch.
+
+
