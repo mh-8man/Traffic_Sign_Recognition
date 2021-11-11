@@ -7,7 +7,16 @@ This will result in a model that has a poor judgement of signs when there is a l
 The pictures we tried in the last run had a lot of noise in them compared to the rest of the images of german traffic signs.
 
 
-Er youtube relevant resource i rapporten (CNN Tutorial)?
+1. hvor stor rapporten skal være?
+1. Er youtube relevant resource i rapporten (CNN Tutorial)?
+1. Skal vi documenter de resource (om de er blogpost eller youtube).
+2. skal arbeids-oppsummering være individuelt eller gruppevis? er det 2 sider hver uke eller til sammen? 
+2. hva betyr "visualiser datasettet"?(det står i oppgavebeskrivelsen)
+2. hva betyr forskjellig modells? (er det nok med å bruk CNN models?)
+3. skal test bildene (norsk) være zoomed-in eller ikke?
+4. hva er det forventet accuracy med norsk vanlig/meta bilder?
+5. er kode dokumentasjon god nok (som den er)? evt. hvor grundig må den dokumenteres? 
+6. Har du noe forslag om hva vi kan teste videre, eventuelt hva kan være relevant å researche for å få et bedre resultat?
 
 
 Tried to take clean images of norwegian traffic signts, with no background noise to see if it would give good results on the model.
@@ -19,5 +28,15 @@ Now we will make a new model, with 3 epochs to see if it gives a more accurate r
 The accuracy on norwegian pictures was: 0.10869565217391304
 while testing on the clean images got only: 0.5833333333333334
 This was the result from the model when it had 0.925 accuracy during its last epoch.
+
+After the result on  norwegian images, we found out that the model is bad at generalization (the best result was 17%). After some research we tried some methods to avoid overfitting. The methods are as follows:
+- Set dropout layers to 0.5
+- Use of averagepooling in stead of maxpooling
+- Use kernel size of 3x3(it was originally 5x5)
+- Use a less trained model(less epochs)
+We made the model CNN_Traffic_gen.h5 which gets an accuracy of 0.9584323040380047 with the german images.
+And the accuracy on norwegian_meta_images is: 0.7777777777777778.
+Accuracy on Norwegian pictures: 0.3695652173913043.
+
 
 
