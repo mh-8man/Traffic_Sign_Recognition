@@ -21,6 +21,7 @@ processed_data/labels_test_gray.npy
 processed_data/data_test_gray.npy
 
 !data/norwegian_signs/
+!data/norwegian_cropped/
 !data/norwegian_signs.csv
 !data/norwegian_meta/
 !data/norwegian_meta.csv
